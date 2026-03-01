@@ -51,6 +51,10 @@ ui_down={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="agua"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -58,3 +62,4 @@ ui_down={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+2d/snap/snap_2d_transforms_to_pixel=true

@@ -297,6 +297,8 @@ states/Walk/position = Vector2(588, 100)
 transitions = ["Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_oudfo"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_d6rpx")]
 
 [node name="Player" type="CharacterBody2D" unique_id=984021084]
+collision_layer = 16777215
+collision_mask = 16777215
 script = ExtResource("1_kpjcp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=211120749]
@@ -323,3 +325,5 @@ tree_root = SubResource("AnimationNodeStateMachine_r3kul")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Idle/blend_position = Vector2(0, 0)
 parameters/Walk/blend_position = Vector2(0, 0)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=912502080]
